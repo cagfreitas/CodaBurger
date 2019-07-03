@@ -1,0 +1,394 @@
+/*
+Theme Name: Template Projeto byron.solutions
+Theme URI: https://byron.solutions
+Author: byron.solutions
+Author URI: https://byron.solutions
+Description: Template dos Projetos Wordpress executados na empresa júnior byron.solutions
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: byron.solutions
+Tags: byron.solutions
+*/
+
+
+/*
+*   Insira aqui o estilo referente a seção ou parte do código 
+*   Inicio seção 1
+*/
+
+.center-text {
+    text-align: center;
+}
+
+body {
+    width: 100%;
+    font-family: 'Montserrat', sans-serif;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+@media only screen and (min-width: 768px) {
+    .container-grid {
+        margin-left: -10px;
+        margin-right: -10px;
+    }
+    .container-grid::after {
+        content: '';
+        display: block;
+        clear: both;
+    }
+    [class*='columns'] {
+        padding: 0 10px;
+        float: left;
+    }
+    .columns1-4 {
+        width: 25%;
+    }
+    .columns2-4 {
+        width: 50%;
+    }
+    .columns3-4 {
+        width: 75%;
+    }
+    .columns1-3 {
+        width: 33.3%;
+    }
+}
+
+
+/*
+*   Fim seção 1
+*/
+
+
+/** NAV **/
+
+header {
+    position: relative;
+}
+
+nav {
+    z-index:5;
+    background-color: transparent !important;
+    position: absolute !important;
+    background-image: linear-gradient(rgba(14, 14, 14, 1), rgba(14, 14, 14, 0.5), rgba(14, 14, 14, 0));
+    box-shadow: none !important;
+}
+
+nav .nav-wrapper {
+    width: 80%;
+    margin: 0 auto;
+}
+
+#nav-mobile {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+
+nav ul li a {
+    text-transform: uppercase;
+}
+
+nav ul li a p {
+    margin: 0;
+}
+
+nav ul li a p:hover {
+    color: #F27900;
+}
+
+nav ul li a img {
+    height:80px;
+}
+
+
+/** Pagina **/
+
+.parallax-container{
+    height: 100vh!important;
+    background-image: url(../byron/img/coda-header.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.header_button {
+    position: absolute;
+    top: 75%;
+    left: 50%;
+    z-index: 5;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    text-align: center;
+}
+
+header .header_titulo {
+    font-size: 35px;
+    width: 80%;
+}
+
+.header_button a {
+    background-color: #F27900;
+}
+
+.header_button a:hover {
+    background-color: #F27900;
+}
+
+.header_button a:active {
+    background-color: #F27900;
+}
+
+.header_button a:focus {
+    background-color: #F27900;
+}
+
+#dropdown1 {
+    background-color: transparent;
+    box-shadow: none;
+}
+
+#dropdown1 li {
+    background-color: white;
+}
+
+.arrow-up {
+    background-color: transparent !important;
+    line-height: 0 !important;
+    width: 0 !important;
+    min-height: 0px !important;
+    height: 0;
+    top: 1px;
+    border-top: -12px solid #999595;
+    border-right: 12px solid transparent;
+    border-left: 12px solid transparent;
+    border-bottom: 12px solid white;
+    position: relative;
+    left: 43%;
+}
+
+.social-nav {
+    padding-left: 30px;
+}
+
+.social-color {
+    color: black !important;
+    text-align: center;
+}
+
+.social-color:hover {
+    color: #F27900 !important;
+}
+
+.divider {
+    background-color: #eeeeee !important;
+}
+
+
+/** CARDAPIO **/
+
+.cardapio {
+    padding-bottom: 80px;
+}
+
+.cardapio h2 {
+    padding-bottom: 35px;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 30px;
+}
+
+.cardapio h3 {
+    text-transform: uppercase;
+    font-size: 20px;
+    margin-bottom: 5px;
+    font-weight: bold;
+    border-bottom: 2px solid #F27900;
+    padding-bottom: 7px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.cardapio a h3 {
+    color: black;
+}
+
+.cardapio-conteudo h4 {
+    border-bottom: 1px dotted #3d3d3d;
+    padding: 5px 0;
+    color: black;
+    margin: 0;
+    font-size: 17px;
+    font-weight: bold;
+}
+
+.cardapio-conteudo h4 span {
+    float: right;
+    font-size: 17px;
+    color: #F27900;
+}
+
+.cardapio-conteudo p {
+    color: #3d3d3d;
+    line-height: 20px;
+}
+
+.produtos {
+    padding-top: 25px;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.toggle {
+    cursor: pointer;
+}
+
+.toggle-icon {
+    display: inline;
+    float: right;
+}
+
+.rotate {
+    -moz-transition: all .4s linear;
+    -webkit-transition: all .4s linear;
+    transition: all .4s linear;
+}
+
+.rotate.down {
+    -moz-transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
+    transform: rotate(180deg);
+}
+
+
+/* FOOTER */
+
+#contato {
+    width: 100%;
+}
+
+.background_footer {
+    background-image: url(../byron/img/footer.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+}
+.logo_footer img{
+    height:350px;
+}
+.content_footer {
+    padding: 30px 0;
+    display: grid;
+    grid-row-gap: 20px;
+}
+
+.contato_dados h6 {
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 0
+}
+
+.info {
+    border-bottom: 2px solid #F27900;
+    display: flex;
+    flex-direction: row;
+    align-items: top;
+}
+
+.info:last-child {
+    border: none;
+}
+
+.info i {
+    padding: 0!important;
+    align-self: center;
+}
+
+.info p {
+    margin-top: 0.5rem!important;
+}
+
+.contato_footer {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    align-items: end;
+    color: #ffffff;
+    background-color: rgba(0, 0, 0, 0.64);
+    padding: 20px;
+}
+
+.contato_dados {
+    margin: 0.5rem;
+}
+
+@media only screen and (min-width: 768px) {
+    .content_footer {
+        grid-template-columns: 1fr 1fr;
+        grid-column-gap: 30px;
+        justify-content: center;
+        align-items: center;
+        grid-template-rows: 1fr;
+    }
+    .logo_footer,
+    .contato_footer {
+        height: 350px;
+    }
+}
+
+
+/*
+* Desenvolvido por
+*/
+
+.page-footer {
+    margin: 0!important;
+    padding-top: 0!important;
+    background-color: black!important;
+}
+
+.footer-copyright {
+    background-color: black!important;
+    padding: 0!important;
+    color: white!important;
+}
+
+.footer-copyright .container {
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+    padding: 10px 0!important;
+}
+
+.footer-copyright .container p {
+    margin: 0;
+    text-align: center;
+}
+
+.footer-copyright .container a {
+    max-height: 100%;
+}
+
+.footer-copyright .container img {
+    width:50%
+}
+
+
+/* Medium devices (landscape tablets, 768px and up) */
+
+@media only screen and (min-width: 600px) {
+    .footer-copyright .container {
+        grid-template-columns: 1fr 1fr;
+        padding: 15px 0 15px 0!important;
+    }
+    .footer-copyright .container p {
+        text-align: right;
+    }
+    .footer-copyright .container img {
+        float: left;
+        width:40%;
+    }
+}
